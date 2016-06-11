@@ -4,10 +4,6 @@ export void nbody(const uniform int N, const uniform float x[], const uniform fl
   float * vfx = new float[N];
   float * vfy = new float[N];
   float * vfz = new float[N];
-  const uniform int size = sizeof(float)*N;
-  memset(vfx, 0, size);
-  memset(vfy, 0, size);
-  memset(vfz, 0, size);
 
 for(uniform int i=0;i<N;i++){
   foreach(j=i+1 ... N){
